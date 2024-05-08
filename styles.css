@@ -15,19 +15,22 @@ body {
 
 /* Header */
 header {
-    background-color: #250303;
+    background-color: #e15757;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    
 }
 
 header h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    animation: fadeInUp 1s ease;
 }
 
 header p {
     font-size: 1.1rem;
+    animation: fadeInUp 1s ease;
 }
 
 /* Sections */
@@ -39,18 +42,20 @@ section {
 section h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    background-color: #5e2222;
+    background-color:#e15757;
     color: #f9f9f9;
     width:fit-content;
     margin-right: auto;
     margin-left: auto;
-    padding: 1%;
+    padding: 1px 20px 1px 20px;
     border-radius: 10px;
+    animation: fadeInUp 1s ease;
 }
 
 section p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
 }
 
 /* Job Experience */
@@ -61,11 +66,13 @@ section p {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    animation: fadeInUp 1s ease;
 }
 
 .job h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    animation: fadeInUp 1s ease;
 }
 
 .job p {
@@ -73,28 +80,33 @@ section p {
     color: #666;
     margin-bottom: 10px;
     text-align: center; /* Align experience description to the center */
+    animation: fadeInUp 1s ease;
 }
 
 .job ul {
     list-style-type: none;
     padding-left: 20px;
     text-align: left; /* Align job details to the left */
+    animation: fadeInUp 1s ease;
 }
 
 .job ul li {
     margin-bottom: 5px;
+    animation: fadeInUp 1s ease;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #e15757;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    animation: fadeInUp 1s ease;
 }
 
 footer p {
     font-size: 1rem;
+    animation: fadeInUp 1s ease;
 }
 
 /* Links */
@@ -102,8 +114,21 @@ a {
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
+    animation: fadeInUp 1s ease;
 }
 
 a:hover {
     color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
