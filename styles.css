@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #250303;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -33,11 +33,19 @@ header p {
 /* Sections */
 section {
     padding: 40px 20px;
+    text-align: center; /* Center align content */
 }
 
 section h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    background-color: #5e2222;
+    color: #f9f9f9;
+    width:fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1%;
+    border-radius: 10px;
 }
 
 section p {
@@ -48,6 +56,11 @@ section p {
 /* Job Experience */
 .job {
     margin-bottom: 40px;
+    text-align: center; /* Center align job experience */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .job h3 {
@@ -59,11 +72,13 @@ section p {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 10px;
+    text-align: center; /* Align experience description to the center */
 }
 
 .job ul {
     list-style-type: none;
     padding-left: 20px;
+    text-align: left; /* Align job details to the left */
 }
 
 .job ul li {
