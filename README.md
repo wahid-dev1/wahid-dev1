@@ -1,7 +1,18 @@
 # 💫 About Me:
-I'm a full-stack developer with over 4 years of hands-on experience, <br>dedicated to delivering top-notch web solutions for small and <br>medium-sized businesses. My skill set spans a range of technologies, <br>allowing me to create scalable and customized applications that meet <br>your unique needs.
+I'm a full-stack developer with over 4+ years of hands-on experience, <br>dedicated to delivering top-notch web solutions for small and <br>medium-sized businesses. My skill set spans a range of technologies, <br>allowing me to create scalable and customized applications that meet <br>your unique needs.
 
+Sure, here is just the "Portfolio" section:
 
+---
+
+## 💼 Portfolio
+- [AGS Advanced](https://agsadvanced.com/#/home)
+- [Teaching Circle](https://teachingcircle.one/)
+- [Pet Set Go](https://petsetgo.com/)
+- [Finqalab](https://www.finqalab.com/)
+- [ADSS Ottawa](https://adssottawa.com/)
+
+---
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/wahid-ur-rehman-003b13142) 
 
