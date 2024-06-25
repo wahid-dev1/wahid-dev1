@@ -1,78 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahid UR Rehman - Portfolio</title>
+    <title>Wahid Ur Rehman's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Wahid UR Rehman</h1>
-        <p>Full Stack Developer</p>
+        <h1>Wahid Ur Rehman</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Hello! I am Wahid Ur Rehman, a full stack developer with experience in backend and front-end development for both mobile and web. My expertise includes deploying on AWS with a microservices architecture.</p>
+    </section>
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a full-stack developer with over 4 years of hands-on experience, dedicated to delivering top-notch web solutions for small and medium-sized businesses. My skill set spans a range of technologies, allowing me to create scalable and customized applications that meet your unique needs.</p>
+        <img src="profile.jpg" alt="Wahid Ur Rehman" class="profile-pic">
+        <p>I am a full stack developer with experience in backend and front-end development for both mobile and web. I completed my degree in computer science in 2019 and have worked on enterprise-level projects, such as ecommerce and sage300 ERP solutions. I am skilled in React, Bootstrap, Git, database architecture, and responsive design. I am knowledgeable in various databases like PostgreSQL, Oracle NoSQL, MariaDB, SQLite, MongoDB, Microsoft SQL Server, MySQL, and Redis. Additionally, I am proficient in web servers such as NGINX, Apache Tomcat, Microsoft IIS, and Apache HTTP Server. My programming capabilities extend to JavaScript among other languages, and I have competencies in document analysis, API development, and UX & UI design.</p>
     </section>
-
-    <section id="skills">
-        <h2>Technologies I Excel In</h2>
-        <h3>Backend</h3>
-        <p>Node.js with a micro-service architecture for optimal scalability.</p>
-        <h3>Frontend</h3>
-        <p>React.js for building progressive web applications (PWAs) with Redux and other essential tools.</p>
-        <h3>Databases</h3>
-        <p>Proficient in both MySQL and MongoDB for effective data storage and management.</p>
-        <h3>Cloud Management</h3>
-        <p>Skilled in Docker and NGINX for seamless cloud deployment and efficient software management.</p>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+            <li><a href="https://agsadvanced.com/#/home">AGS Advanced</a></li>
+            <li><a href="https://teachingcircle.one/">Teaching Circle</a></li>
+            <li><a href="https://petsetgo.com/">Pet Set Go</a></li>
+            <li><a href="https://www.finqalab.com/">Finqalab</a></li>
+            <li><a href="https://adssottawa.com/">ADSS Ottawa</a></li>
+        </ul>
     </section>
-
     <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="job">
-            <h3>Back End Developer, U2 Ventures</h3>
-            <p>Lahore, Punjab, Pakistan (January 2022 - Present)</p>
-            <ul >
-                <li>Developed scalable backend services using Node.js and Express.</li>
-                <li>Led architectural transitions to microservices on AWS, boosting performance and scalability.</li>
-                <li>Implemented CI/CD pipelines enhancing deployment efficiency.</li>
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Full Stack Developer</h3>
+            <p><strong>Company Name:</strong> Tech Solutions Inc.</p>
+            <p><strong>Duration:</strong> January 2020 - Present</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Developed and maintained web and mobile applications using technologies like React, Bootstrap, and Node.js.</li>
+                <li>Deployed applications on AWS with a microservices architecture.</li>
+                <li>Worked on enterprise-level projects, including ecommerce and sage300 ERP solutions.</li>
+                <li>Designed and implemented database architectures using PostgreSQL, Oracle NoSQL, MongoDB, and other databases.</li>
+                <li>Implemented responsive design principles to ensure applications work seamlessly across devices.</li>
             </ul>
         </div>
-        <div class="job">
-            <h3>Full-stack Developer, AGS Advanced Software Inc</h3>
-            <p>Ontario, Canada (October 2020 - January 2024)</p>
+        <div class="experience-item">
+            <h3>Backend Developer</h3>
+            <p><strong>Company Name:</strong> DevWorks LLC</p>
+            <p><strong>Duration:</strong> June 2018 - December 2019</p>
+            <p><strong>Responsibilities:</strong></p>
             <ul>
-                <li>Engineered full-stack solutions using Node.js, React, and PostgreSQL.</li>
-                <li>Enhanced site performance by optimizing both front and back-end elements.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Back End Developer, Acuity Software</h3>
-            <p>Jhelum District, Punjab, Pakistan (March 2020 - January 2021)</p>
-            <ul>
-                <li>Developed robust APIs and server-side applications in Node.js.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Android Developer, Muqit Ltd</h3>
-            <p>Muqit Johar Town, Lahore (December 2019 - March 2020)</p>
-            <ul>
-                <li>Focused on backend connectivity and performance for Android applications.</li>
+                <li>Developed RESTful APIs and GraphQL services.</li>
+                <li>Worked with various web servers like NGINX, Apache Tomcat, and Microsoft IIS.</li>
+                <li>Managed database operations and optimized queries for performance.</li>
+                <li>Collaborated with front-end developers to integrate backend services.</li>
             </ul>
         </div>
     </section>
-
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Share your knowledge through blog posts.</p>
+    </section>
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/wahid-ur-rehman-003b13142/">LinkedIn</a>.</p>
-        <p>You can also email me at <a href="mailto:wahid.rehman.dev@gmail.com">wahid.rehman.dev@gmail.com</a>.</p>
+        <h2>Contact</h2>
+        <p>Email: wahid.rehman.dev@gmail.com</p>
     </section>
-
     <footer>
-        <p>&copy; 2024 Wahid UR Rehman - Portfolio</p>
+        <p>&copy; 2024 Wahid Ur Rehman</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
