@@ -3,120 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahid Ur Rehman - Full Stack Developer</title>
+    <title>Wahid Ur Rehman | Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Wahid Ur Rehman</h1>
+    <header class="hero">
         <nav>
+            <div class="logo">WR</div>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero-content">
+            <h1>Wahid Ur Rehman</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Peshawar, Pakistan | wahid.rehman.dev@gmail.com | +923129009520</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button">Get in Touch</a>
+                <a href="resume.pdf" class="cta-button secondary" download>Download Resume</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome</h2>
-            <p>Hello! I'm Wahid Ur Rehman, a full-stack developer specializing in robust backend systems and intuitive front-end experiences for web and mobile platforms. My expertise includes deploying scalable solutions on AWS using microservices architecture.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </section>
-
-        <section id="about">
+        <section id="about" class="card">
             <h2>About Me</h2>
-            <img src="Wahid Ur Rehman (1).jpg" alt="Wahid Ur Rehman" class="profile-pic">
-            <p>As a full stack developer with a degree in computer science (2019), I've honed my skills on enterprise-level projects, including e-commerce platforms and Sage 300 ERP solutions. My tech stack includes:</p>
-            <ul class="skills-list">
-                <li>Frontend: React, Bootstrap</li>
-                <li>Backend: Node.js, Express</li>
-                <li>Databases: PostgreSQL, MongoDB, Redis</li>
-                <li>Cloud: AWS, Microservices</li>
-                <li>Tools: Git, Docker</li>
-            </ul>
-            <p>I'm passionate about creating efficient, scalable solutions and continuously expanding my technical expertise.</p>
-        </section>
-
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="ags-advanced.jpg" alt="AGS Advanced">
-                    <h3>AGS Advanced</h3>
-                    <p>An enterprise solution for advanced software management.</p>
-                    <a href="https://agsadvanced.com/#/home" target="_blank">View Project</a>
-                </div>
-                <div class="portfolio-item">
-                    <img src="teaching-circle.jpg" alt="Teaching Circle">
-                    <h3>Teaching Circle</h3>
-                    <p>An educational platform connecting teachers and students.</p>
-                    <a href="https://teachingcircle.one/" target="_blank">View Project</a>
-                </div>
-                <!-- Add more portfolio items similarly -->
+            <div class="about-content">
+                <img src="Wahid Ur Rehman (1).jpg" alt="Wahid Ur Rehman" class="profile-pic">
+                <p>I'm a full stack developer with 4+ years of experience in crafting robust backend systems and intuitive front-end experiences. My expertise spans from e-commerce platforms to ERP solutions, always focusing on scalability and performance. I excel in translating complex technical concepts for diverse stakeholders and have a proven track record of optimizing system performance through analytical problem-solving.</p>
             </div>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Full Stack Developer</h3>
-                <p><strong>Tech Solutions Inc.</strong> | January 2020 - Present</p>
-                <ul>
-                    <li>Developed scalable web and mobile applications using React and Node.js</li>
-                    <li>Implemented microservices architecture on AWS, improving system reliability by 30%</li>
-                    <li>Optimized database queries, resulting in 50% faster data retrieval</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Backend Developer</h3>
-                <p><strong>DevWorks LLC</strong> | June 2018 - December 2019</p>
-                <ul>
-                    <li>Designed and implemented RESTful APIs, increasing system efficiency by 25%</li>
-                    <li>Managed database operations across multiple platforms, ensuring 99.9% uptime</li>
-                    <li>Collaborated with front-end teams to reduce integration time by 40%</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="blog">
-            <h2>Blog</h2>
-            <div class="blog-posts">
-                <article>
-                    <h3>Microservices vs Monoliths: A Practical Comparison</h3>
-                    <p>Published on: May 15, 2024</p>
-                    <p>In this post, we explore the pros and cons of microservices and monolithic architectures...</p>
-                    <a href="#">Read More</a>
-                </article>
-                <!-- Add more blog posts -->
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <p>Email: wahid.rehman.dev@gmail.com</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Backend Developer</h3>
+                        <p class="company">U2 Ventures</p>
+                        <p class="date">Jan 2022 - Present</p>
+                        <ul>
+                            <li>Engineered high-performance backend systems, reducing query response times by 70% and processing 1M+ daily transactions</li>
+                            <li>Spearheaded implementation of microservices architecture, achieving 99.9% uptime and 150% increase in user traffic capacity</li>
+                            <li>Instituted code review practices, decreasing production bugs by 35% and improving code quality scores by 28%</li>
+                            <li>Mentored 5 junior developers, accelerating their project contribution timeline by 3 weeks on average</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <p class="company">AGS Advanced Software Inc</p>
+                        <p class="date">Oct 2020 - Jan 2022</p>
+                        <ul>
+                            <li>Revolutionized full-stack applications using Node.js and React, boosting API efficiency by 35% and user engagement by 42%</li>
+                            <li>Conducted system analysis, identifying and resolving bottlenecks to cut application load time by 50%</li>
+                            <li>Launched a new testing framework, expanding test coverage by 60% and diminishing regression issues by 45%</li>
+                            <li>Orchestrated bi-weekly knowledge sharing sessions, increasing team problem-solving efficiency by 30%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Backend Developer</h3>
+                        <p class="company">Acuity Software</p>
+                        <p class="date">Mar 2020 - Jan 2021</p>
+                        <ul>
+                            <li>Optimized backend infrastructures, reducing query response times by 35% and supporting a 50% surge in daily transactions</li>
+                            <li>Devised and implemented caching solutions using Redis, accelerating data retrieval speeds by 65%</li>
+                            <li>Streamlined onboarding process by creating comprehensive documentation, cutting new hire ramp-up time by 25%</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>NestJS</li>
+                        <li>RESTful APIs</li>
+                        <li>GraphQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>CI/CD pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="ags-advanced.jpg" alt="AGS Advanced">
+                    <div class="project-info">
+                        <h3>AGS Advanced</h3>
+                        <p>Enterprise software management solution</p>
+                        <p>Technologies: React, Node.js, PostgreSQL, AWS</p>
+                        <a href="https://agsadvanced.com/#/home" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="teaching-circle.jpg" alt="Teaching Circle">
+                    <div class="project-info">
+                        <h3>Teaching Circle</h3>
+                        <p>Educational platform connecting teachers and students</p>
+                        <p>Technologies: React Native, Express.js, MongoDB, Firebase</p>
+                        <a href="https://teachingcircle.one/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="petsetgo.jpg" alt="Pet Set Go">
+                    <div class="project-info">
+                        <h3>Pet Set Go</h3>
+                        <p>Pet care services platform</p>
+                        <p>Technologies: React JS, Node JS, MySQL, Docker & AWS</p>
+                        <a href="https://petsetgo.com/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="card">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p>Peshawar University</p>
+                <p class="date">Graduated: February 2020</p>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/wahid-ur-rehman-003b13142" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
         <p>&copy; 2024 Wahid Ur Rehman. All rights reserved.</p>
     </footer>
 
