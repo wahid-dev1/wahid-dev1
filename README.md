@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm a full-stack developer with over 4+ years of hands-on experience, <br>dedicated to delivering top-notch web solutions for small and <br>medium-sized businesses. My skill set spans a range of technologies, <br>allowing me to create scalable and customized applications that meet <br>your unique needs.
+I'm a full-stack developer with over 5 years of hands-on experience, <br>dedicated to delivering top-notch web solutions for small and <br>medium-sized businesses. My skill set spans a range of technologies, <br>allowing me to create scalable and customized applications that meet <br>your unique needs.
 
 Sure, here is just the "Portfolio" section:
 
