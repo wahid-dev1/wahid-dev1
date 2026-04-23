@@ -1,0 +1,23 @@
+{
+  "name": "Wahid Ur Rehman",
+  "title": "Full Stack Engineer | AI Systems | Scalable Backend Architecture",
+  "metrics": [
+    "Reduced API latency by 35%",
+    "Handled 50,000+ monthly users",
+    "Improved system throughput by 3x"
+  ],
+  "projects": [
+    {
+      "name": "AI Financial Analysis System",
+      "desc": "SEC + Yahoo Finance + LLM pipeline for structured financial insights"
+    },
+    {
+      "name": "PDF to Structured Data Engine",
+      "desc": "Automated parsing system for financial documents"
+    },
+    {
+      "name": "Appointment Scheduling System",
+      "desc": "Advanced recurring scheduling with conflict resolution"
+    }
+  ]
+}
