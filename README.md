@@ -33,21 +33,18 @@ Results-driven Senior Full Stack Software Engineer with 5+ years of experience a
   - Scaled microservices for AI SaaS; reduced API latency by 35%
   - Built event-driven pipelines across 10+ APIs; cut manual data handling by 70%
   - Architected backends for 50,000+ MAU with 99.9% uptime
-
 ### Backend Developer · U2 Ventures
 *Lahore, Pakistan · 2022 – 2025*
 
   - Delivered 15+ REST APIs for 100,000+ users (Node.js, TypeScript)
   - Redis caching: 60% less DB load, responses under 120ms
   - Mentored juniors; improved team code quality by 20%
-
 ### Full Stack Developer · AGS Advanced Software Inc
 *Canada (Remote) · 2020 – 2024*
 
   - 5+ full-stack apps for enterprise financial reporting
   - NestJS microservices: 50% faster deployments
   - Secure backends for $2M+ monthly transactions
-
 ### Backend Developer · Acuity Software
 *Pakistan · 2020 – 2021*
 
@@ -60,13 +57,9 @@ Results-driven Senior Full Stack Software Engineer with 5+ years of experience a
 ## Technical Skills
 
 **Languages:** `JavaScript`, `TypeScript`
-
 **Backend:** `Node.js`, `NestJS`, `Express.js`, `GraphQL`, `Microservices`, `Kafka`, `RabbitMQ`
-
 **Frontend:** `React`, `Angular`, `Tailwind CSS`
-
 **Databases:** `PostgreSQL`, `MongoDB`, `SQL Server`, `Redis`, `Elasticsearch`
-
 **Cloud & DevOps:** `AWS`, `Azure`, `Docker`, `Kubernetes`, `Terraform`, `GitHub Actions`
 
 ---
