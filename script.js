@@ -1,8 +1,10 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navbar = document.querySelector('.navbar');
 
 const RESUME = {
-  docx: 'Wahid_Ur_Rehman_Resume.docx',
+  docx: 'Wahid_Ur_Rehman_Resume_GCC.docx',
+  docxFallback: 'Wahid_Ur_Rehman_Resume.docx',
   pdf: 'Wahid Ur Rehman.pdf',
 };
 
@@ -14,26 +16,30 @@ function setResumeDownloadLinks(url, filename) {
   document.querySelectorAll('[data-resume-download]').forEach((link) => {
     link.href = url;
     link.download = filename;
-    link.textContent = filename.endsWith('.docx') ? 'Download DOCX' : 'Download PDF';
   });
 }
 
-async function resolveResumeDownload() {
-  const docxUrl = assetUrl(RESUME.docx);
-  const pdfUrl = assetUrl(RESUME.pdf);
-
+async function fileExists(url) {
   try {
-    const response = await fetch(docxUrl, { method: 'HEAD' });
-    if (response.ok) {
-      setResumeDownloadLinks(docxUrl, RESUME.docx);
-      return { url: docxUrl, type: 'docx' };
-    }
+    const response = await fetch(url, { method: 'HEAD' });
+    return response.ok;
   } catch {
-    // Fall back to PDF when DOCX is not deployed yet.
+    return false;
+  }
+}
+
+async function resolveResumeDownload() {
+  const candidates = [RESUME.docx, RESUME.docxFallback, RESUME.pdf];
+
+  for (const file of candidates) {
+    const url = assetUrl(file);
+    if (await fileExists(url)) {
+      setResumeDownloadLinks(url, file);
+      return { url, file };
+    }
   }
 
-  setResumeDownloadLinks(pdfUrl, RESUME.pdf);
-  return { url: pdfUrl, type: 'pdf' };
+  return null;
 }
 
 if (navToggle && navLinks) {
@@ -54,11 +60,20 @@ if (navToggle && navLinks) {
   });
 }
 
+if (navbar) {
+  const onScroll = () => {
+    const fixed = window.scrollY > 48;
+    navbar.classList.toggle('is-scrolled', fixed);
+    document.body.classList.toggle('nav-fixed', fixed);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
 const resumeModal = document.getElementById('resume-modal');
 const previewResumeBtn = document.getElementById('preview-resume-btn');
 const resumePreview = document.getElementById('resume-preview');
 let resumeLoaded = false;
-let resumeDownload = null;
 
 function openResumeModal() {
   if (!resumeModal) return;
@@ -77,10 +92,8 @@ function closeResumeModal() {
 
 function showPdfPreview(pdfUrl) {
   if (!resumePreview) return;
-
   resumePreview.classList.remove('is-loading', 'is-error');
   resumePreview.innerHTML = '';
-
   const iframe = document.createElement('iframe');
   iframe.className = 'resume-pdf-frame';
   iframe.src = pdfUrl;
@@ -89,40 +102,41 @@ function showPdfPreview(pdfUrl) {
   resumeLoaded = true;
 }
 
+async function tryDocxPreview(docxUrl) {
+  if (typeof docx === 'undefined') return false;
+  const response = await fetch(docxUrl);
+  if (!response.ok) return false;
+  const blob = await response.blob();
+  resumePreview.classList.remove('is-loading');
+  resumePreview.textContent = '';
+  await docx.renderAsync(blob, resumePreview, undefined, {
+    className: 'docx',
+    inWrapper: true,
+    ignoreWidth: false,
+    ignoreHeight: false,
+  });
+  resumeLoaded = true;
+  return true;
+}
+
 async function loadResumePreview() {
   if (!resumePreview || resumeLoaded) return;
-
-  const docxUrl = assetUrl(RESUME.docx);
-  const pdfUrl = assetUrl(RESUME.pdf);
 
   resumePreview.classList.add('is-loading');
   resumePreview.classList.remove('is-error');
   resumePreview.textContent = 'Loading resume preview...';
 
-  if (typeof docx !== 'undefined') {
+  const docxUrls = [assetUrl(RESUME.docx), assetUrl(RESUME.docxFallback)];
+
+  for (const url of docxUrls) {
     try {
-      const response = await fetch(docxUrl);
-      if (response.ok) {
-        const blob = await response.blob();
-        resumePreview.classList.remove('is-loading');
-        resumePreview.textContent = '';
-
-        await docx.renderAsync(blob, resumePreview, undefined, {
-          className: 'docx',
-          inWrapper: true,
-          ignoreWidth: false,
-          ignoreHeight: false,
-        });
-
-        resumeLoaded = true;
-        return;
-      }
+      if (await tryDocxPreview(url)) return;
     } catch {
-      // Use PDF preview on GitHub Pages when DOCX is missing or cannot render.
+      // Try next source.
     }
   }
 
-  showPdfPreview(pdfUrl);
+  showPdfPreview(assetUrl(RESUME.pdf));
 }
 
 if (previewResumeBtn) {
@@ -144,6 +158,4 @@ if (resumeModal) {
   });
 }
 
-resolveResumeDownload().then((download) => {
-  resumeDownload = download;
-});
+resolveResumeDownload();
