@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="page-bg" aria-hidden="true">
-        <div class="page-bg-grid"></div>
+        <DIVFIX class="page-bg-grid"></div>
     </div>
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <header class="hero" id="top">
@@ -33,7 +33,6 @@
                 <li><a href="#education">Education</a></li>
             </ul>
         </nav>
-        <div id="nav-overlay" class="nav-overlay" hidden aria-hidden="true"></div>
 
         <div class="hero-content container">
             <div class="hero-bg-orbs" aria-hidden="true">
@@ -56,7 +55,7 @@
                 <li>AWS</li>
                 <li>K8s</li>
             </ul>
-            <div class="hero-grid">
+            <DIVFIX class="hero-grid">
                 <div class="hero-text">
                     <p class="hero-eyebrow animate-in">Open to relocation — UAE · KSA · Qatar · Available immediately</p>
                     <h1 class="animate-in">Wahid Ur Rehman</h1>
@@ -84,7 +83,7 @@
                 </div>
                 <div class="hero-visual animate-in">
                     <div class="hero-photo-frame">
-                        <div class="hero-photo-ring" aria-hidden="true"></div>
+                        <DIVFIX class="hero-photo-ring" aria-hidden="true"></div>
                         <img src="Wahid Ur Rehman (1).jpg" alt="Portrait of Wahid Ur Rehman" class="hero-photo" width="320" height="320">
                     </div>
                 </div>
@@ -92,24 +91,13 @@
         </div>
     </header>
 
-    <div class="section-wave wave-light" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,90 720,0 1440,50 L1440,80 L0,80 Z" fill="var(--bg)"/></svg>
-    </div>
-
     <main>
         <section id="about" class="section">
             <div class="container">
-                <header class="section-header section-header--graphic">
+                <header class="section-header">
                     <p class="section-label">About</p>
                     <h2>Professional Summary</h2>
                 </header>
-                <div class="about-layout">
-                <div class="about-graphic" aria-hidden="true">
-                    <div class="about-graphic-card">
-                        <svg viewBox="0 0 120 120" class="about-graphic-svg" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/><path d="M35 75 L60 30 L85 75 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="55" r="8" fill="currentColor" opacity="0.9"/></svg>
-                        <span class="about-graphic-label">Build · Ship · Scale</span>
-                    </div>
-                </div>
                 <div class="card about-card">
                     <p class="lead">
                         Results-driven Senior Full Stack Software Engineer with 5+ years of experience architecting
@@ -129,13 +117,8 @@
                         <span>Agile Leadership</span>
                     </div>
                 </div>
-                </div>
             </div>
         </section>
-
-        <div class="section-wave wave-alt" aria-hidden="true">
-            <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,30 C480,80 960,10 1440,45 L1440,80 L0,80 Z" fill="var(--bg-alt)"/></svg>
-        </div>
 
         <section id="experience" class="section section-alt">
             <div class="container">
@@ -223,7 +206,6 @@
                 </header>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <div class="skill-icon" aria-hidden="true"><svg><use href="#icon-code"/></svg></div>
                         <h3>Languages</h3>
                         <ul class="skill-tags">
                             <li>JavaScript (ES2022+)</li>
@@ -231,7 +213,6 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <div class="skill-icon" aria-hidden="true"><svg><use href="#icon-layers"/></svg></div>
                         <h3>Backend</h3>
                         <ul class="skill-tags">
                             <li>Node.js</li>
@@ -245,7 +226,6 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <div class="skill-icon" aria-hidden="true"><svg><use href="#icon-code"/></svg></div>
                         <h3>Frontend</h3>
                         <ul class="skill-tags">
                             <li>React</li>
@@ -255,7 +235,6 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <div class="skill-icon" aria-hidden="true"><svg><use href="#icon-db"/></svg></div>
                         <h3>Databases</h3>
                         <ul class="skill-tags">
                             <li>PostgreSQL</li>
@@ -266,7 +245,6 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <div class="skill-icon" aria-hidden="true"><svg><use href="#icon-cloud"/></svg></div>
                         <h3>Cloud &amp; DevOps</h3>
                         <ul class="skill-tags">
                             <li>AWS</li>
@@ -279,7 +257,6 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <div class="skill-icon" aria-hidden="true"><svg><use href="#icon-shield"/></svg></div>
                         <h3>Quality &amp; Process</h3>
                         <ul class="skill-tags">
                             <li>Jest</li>
@@ -300,7 +277,7 @@
                     <h2>Featured Projects</h2>
                 </header>
                 <div class="projects-grid">
-                    <article class="project-card" data-theme="ai"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-ai"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>Voho AI</h3>
                             <p>AI SaaS platform for automation, intelligent workflows, and voice-driven engagement.</p>
@@ -312,7 +289,7 @@
                             <a href="https://www.voho.ai/" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="oss"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-layers"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>OmniLedger <span class="project-badge">Open Source</span></h3>
                             <p>Distributed ledger-inspired system exploring throughput, sharding, and scalable design.</p>
@@ -323,7 +300,7 @@
                             <a href="https://github.com/wahid-dev1/OmniLedger" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="media"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-globe"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>ASVA TV</h3>
                             <p>Live TV streaming with channels mapped on an interactive world map.</p>
@@ -335,7 +312,7 @@
                             <a href="https://asva.tv/" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="finance"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-shield"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>Financial Statement Maker</h3>
                             <p>AI-assisted generation of structured financial statements from market and filing data.</p>
@@ -346,7 +323,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="biz"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-briefcase"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>Samina</h3>
                             <p>Full-stack platform for business operations and client management.</p>
@@ -357,7 +334,7 @@
                             </ul>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="enterprise"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-cloud"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>AGS Advanced</h3>
                             <p>Enterprise software management and financial reporting for global clients.</p>
@@ -369,7 +346,7 @@
                             <a href="https://agsadvanced.com/#/home" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="edu"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-code"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>Teaching Circle</h3>
                             <p>Platform connecting educators and students for online learning.</p>
@@ -381,7 +358,7 @@
                             <a href="https://teachingcircle.one/" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="pets"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-db"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>Pet Set Go</h3>
                             <p>Pet care services marketplace and booking platform.</p>
@@ -393,7 +370,7 @@
                             <a href="https://petsetgo.com/" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="finance"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-shield"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>Finqalab</h3>
                             <p>Financial analytics and reporting for business intelligence.</p>
@@ -405,7 +382,7 @@
                             <a href="https://www.finqalab.com/" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">→</span></a>
                         </div>
                     </article>
-                    <article class="project-card" data-theme="enterprise"><div class="project-card-art" aria-hidden="true"><svg class="project-icon" aria-hidden="true"><use href="#icon-cloud"/></svg></div>
+                    <article class="project-card">
                         <div class="project-info">
                             <h3>ADSS Ottawa</h3>
                             <p>Corporate web presence and service platform for ADSS Ottawa.</p>
@@ -466,17 +443,6 @@
             <p class="footer-copy">&copy; 2026 Wahid Ur Rehman. All rights reserved.</p>
         </div>
     </footer>
-
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
-      <symbol id="icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
-      <symbol id="icon-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
-      <symbol id="icon-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
-      <symbol id="icon-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></symbol>
-      <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></symbol>
-      <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
-      <symbol id="icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
-      <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
-    </svg>
 
     <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.7/dist/docx-preview.min.js"></script>

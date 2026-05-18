@@ -1,8 +1,31 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navOverlay = document.getElementById('nav-overlay');
 const navbar = document.querySelector('.navbar');
 const scrollProgress = document.getElementById('scroll-progress');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function setNavOpen(isOpen) {
+  if (navToggle) navToggle.setAttribute('aria-expanded', String(isOpen));
+  if (navLinks) navLinks.dataset.visible = String(isOpen);
+  if (navOverlay) {
+    if (isOpen) {
+      navOverlay.hidden = false;
+      navOverlay.classList.add('is-visible');
+      navOverlay.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('nav-menu-open');
+    } else {
+      navOverlay.classList.remove('is-visible');
+      navOverlay.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('nav-menu-open');
+      setTimeout(() => {
+        if (!navLinks?.dataset.visible || navLinks.dataset.visible === 'false') {
+          navOverlay.hidden = true;
+        }
+      }, 300);
+    }
+  }
+}
 
 const RESUME = {
   docx: 'Wahid_Ur_Rehman_Resume_GCC.docx',
@@ -49,16 +72,18 @@ if (navToggle && navLinks) {
 
   navToggle.addEventListener('click', () => {
     const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', String(!isExpanded));
-    navLinks.dataset.visible = String(!isExpanded);
+    setNavOpen(!isExpanded);
   });
 
   navLinks.addEventListener('click', (event) => {
     const link = event.target instanceof Element ? event.target.closest('a') : null;
-    if (link) {
-      navToggle.setAttribute('aria-expanded', 'false');
-      navLinks.dataset.visible = 'false';
-    }
+    if (link) setNavOpen(false);
+  });
+
+  navOverlay?.addEventListener('click', () => setNavOpen(false));
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) setNavOpen(false);
   });
 }
 
