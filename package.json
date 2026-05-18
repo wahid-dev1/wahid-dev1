@@ -1,0 +1,21 @@
+{
+  "name": "wahid-dev1",
+  "version": "1.0.0",
+  "description": "Full-Stack Developer with **5+ years of experience** building scalable, high-performance web and mobile applications.",
+  "main": "script.js",
+  "scripts": {
+    "convert-resume": "node scripts/convert-pdf-to-docx.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahid-dev1/wahid-dev1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wahid-dev1/wahid-dev1/issues"
+  },
+  "homepage": "https://github.com/wahid-dev1/wahid-dev1#readme"
+}

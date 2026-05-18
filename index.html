@@ -36,8 +36,9 @@
                     <a href="tel:+923129009520">+92 312 9009520</a>
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://www.linkedin.com/in/wahid-ur-rehman-003b13142/" class="cta-button" target="_blank" rel="noopener">Go To Linkedin</a>
-                    <a href="Wahid Ur Rehman.pdf" class="cta-button secondary" download>Download Resume</a>
+                    <a href="https://www.linkedin.com/in/wahid-ur-rehman-003b13142/" class="cta-button" target="_blank" rel="noopener">View LinkedIn Profile</a>
+                    <button type="button" class="cta-button secondary" id="preview-resume-btn" aria-haspopup="dialog">Preview Resume</button>
+                    <a href="#" class="cta-button secondary" data-resume-download>Download Resume</a>
                 </div>
             </div>
         </div>
@@ -234,6 +235,20 @@
         </section>
     </main>
 
+    <div id="resume-modal" class="resume-modal" hidden aria-hidden="true">
+        <div class="resume-modal-backdrop" data-close-resume></div>
+        <div class="resume-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+            <header class="resume-modal-header">
+                <h2 id="resume-modal-title">Resume Preview</h2>
+                <button type="button" class="resume-modal-close" data-close-resume aria-label="Close resume preview">&times;</button>
+            </header>
+            <div id="resume-preview" class="resume-preview" aria-live="polite"></div>
+            <footer class="resume-modal-footer">
+                <a href="#" class="cta-button" data-resume-download>Download Resume</a>
+            </footer>
+        </div>
+    </div>
+
     <footer>
         <div class="container footer-content">
             <div class="social-links">
@@ -243,6 +258,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.7/dist/docx-preview.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

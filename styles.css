@@ -224,6 +224,9 @@ header.hero::before {
     border: none;
     background: #fff;
     color: var(--primary);
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -435,6 +438,117 @@ header.hero::before {
 
 .education-item h3 {
     color: var(--text);
+}
+
+/* Resume modal */
+.resume-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+.resume-modal[hidden] {
+    display: none;
+}
+
+.resume-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(4, 28, 63, 0.72);
+}
+
+.resume-modal-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(920px, 100%);
+    max-height: min(90vh, 900px);
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border-radius: 1rem;
+    box-shadow: 0 24px 60px rgba(4, 28, 63, 0.35);
+    overflow: hidden;
+}
+
+.resume-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(108, 122, 146, 0.2);
+}
+
+.resume-modal-header h2 {
+    font-size: 1.25rem;
+}
+
+.resume-modal-close {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(10, 124, 255, 0.1);
+    color: var(--text);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.resume-modal-close:hover,
+.resume-modal-close:focus-visible {
+    background: rgba(10, 124, 255, 0.2);
+}
+
+.resume-preview {
+    flex: 1;
+    overflow: auto;
+    padding: 1.25rem;
+    background: #eef2f8;
+}
+
+.resume-preview .docx-wrapper {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.resume-pdf-frame {
+    width: 100%;
+    min-height: min(70vh, 720px);
+    border: none;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+.resume-preview.is-loading,
+.resume-preview.is-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.resume-modal-footer {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid rgba(108, 122, 146, 0.2);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.resume-modal-footer .cta-button {
+    background: var(--primary);
+    color: #fff;
+}
+
+body.resume-modal-open {
+    overflow: hidden;
 }
 
 footer {
