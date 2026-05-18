@@ -1,23 +1,149 @@
 {
   "name": "Wahid Ur Rehman",
-  "title": "Full Stack Engineer | AI Systems | Scalable Backend Architecture",
+  "title": "Senior Full Stack Software Engineer",
+  "tagline": "Node.js · TypeScript · Microservices · AI Systems · Cloud",
+  "location": "Peshawar, Pakistan",
+  "relocation": "Open to UAE · KSA · Qatar · Available immediately",
+  "email": "wahid.rehman.dev@gmail.com",
+  "phone": "+92 312 9009520",
+  "portfolio_url": "https://wahid-dev1.github.io/wahid-dev1/",
+  "linkedin": "https://www.linkedin.com/in/wahid-ur-rehman-003b13142/",
+  "github": "https://github.com/wahid-dev1",
+  "summary": "Results-driven Senior Full Stack Software Engineer with 5+ years of experience architecting high-performance, scalable backend systems and data-driven platforms. Deep expertise in Node.js, TypeScript, and NestJS microservices — with proven delivery across AI SaaS, fintech, and enterprise environments in Germany, Canada, and Pakistan.",
   "metrics": [
-    "Reduced API latency by 35%",
-    "Handled 50,000+ monthly users",
-    "Improved system throughput by 3x"
+    { "value": "5+", "label": "Years experience" },
+    { "value": "50k+", "label": "Monthly active users" },
+    { "value": "99.9%", "label": "Platform uptime" },
+    { "value": "35%", "label": "API latency reduction" }
   ],
+  "competencies": [
+    "Microservices Architecture",
+    "System Design & Scalability",
+    "Event-Driven Architecture",
+    "REST & GraphQL APIs",
+    "AWS / Azure",
+    "Docker & Kubernetes",
+    "CI/CD Pipelines",
+    "Agile Leadership"
+  ],
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Voho.ai",
+      "location": "Germany (Remote)",
+      "period": "2025 – Present",
+      "highlights": [
+        "Scaled microservices for AI SaaS; reduced API latency by 35%",
+        "Built event-driven pipelines across 10+ APIs; cut manual data handling by 70%",
+        "Architected backends for 50,000+ MAU with 99.9% uptime"
+      ]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "U2 Ventures",
+      "location": "Lahore, Pakistan",
+      "period": "2022 – 2025",
+      "highlights": [
+        "Delivered 15+ REST APIs for 100,000+ users (Node.js, TypeScript)",
+        "Redis caching: 60% less DB load, responses under 120ms",
+        "Mentored juniors; improved team code quality by 20%"
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "AGS Advanced Software Inc",
+      "location": "Canada (Remote)",
+      "period": "2020 – 2024",
+      "highlights": [
+        "5+ full-stack apps for enterprise financial reporting",
+        "NestJS microservices: 50% faster deployments",
+        "Secure backends for $2M+ monthly transactions"
+      ]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "Acuity Software",
+      "location": "Pakistan",
+      "period": "2020 – 2021",
+      "highlights": [
+        "Node.js APIs for 3 enterprise clients",
+        "SQL optimization: reports from 12s to under 2s",
+        "Zero unplanned downtime over 12 months"
+      ]
+    }
+  ],
+  "skills": {
+    "Languages": ["JavaScript", "TypeScript"],
+    "Backend": ["Node.js", "NestJS", "Express.js", "GraphQL", "Microservices", "Kafka", "RabbitMQ"],
+    "Frontend": ["React", "Angular", "Tailwind CSS"],
+    "Databases": ["PostgreSQL", "MongoDB", "SQL Server", "Redis", "Elasticsearch"],
+    "Cloud & DevOps": ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "GitHub Actions"]
+  },
   "projects": [
     {
-      "name": "AI Financial Analysis System",
-      "desc": "SEC + Yahoo Finance + LLM pipeline for structured financial insights"
+      "name": "Voho AI",
+      "desc": "AI SaaS for automation, workflows, and voice-driven engagement",
+      "url": "https://www.voho.ai/",
+      "tech": "Node.js, LLM pipelines, REST APIs"
     },
     {
-      "name": "PDF to Structured Data Engine",
-      "desc": "Automated parsing system for financial documents"
+      "name": "OmniLedger",
+      "desc": "Open-source distributed ledger-inspired system (throughput, sharding)",
+      "url": "https://github.com/wahid-dev1/OmniLedger",
+      "tech": "Distributed systems, Node.js"
     },
     {
-      "name": "Appointment Scheduling System",
-      "desc": "Advanced recurring scheduling with conflict resolution"
+      "name": "ASVA TV",
+      "desc": "Live TV streaming on an interactive world map",
+      "url": "https://asva.tv/",
+      "tech": "React, Node.js, Streaming"
+    },
+    {
+      "name": "Financial Statement Maker",
+      "desc": "AI-assisted financial statements from market and filing data",
+      "url": "",
+      "tech": "Node.js, LLM, PostgreSQL"
+    },
+    {
+      "name": "Samina",
+      "desc": "Business operations and client management platform",
+      "url": "",
+      "tech": "React, Node.js, PostgreSQL"
+    },
+    {
+      "name": "AGS Advanced",
+      "desc": "Enterprise software management and financial reporting",
+      "url": "https://agsadvanced.com/#/home",
+      "tech": "React, NestJS, PostgreSQL, AWS"
+    },
+    {
+      "name": "Teaching Circle",
+      "desc": "Platform connecting educators and students",
+      "url": "https://teachingcircle.one/",
+      "tech": "React Native, MongoDB, Firebase"
+    },
+    {
+      "name": "Pet Set Go",
+      "desc": "Pet care services marketplace",
+      "url": "https://petsetgo.com/",
+      "tech": "React, Node.js, AWS"
+    },
+    {
+      "name": "Finqalab",
+      "desc": "Financial analytics and reporting",
+      "url": "https://www.finqalab.com/",
+      "tech": "Angular, Node.js, PostgreSQL"
+    },
+    {
+      "name": "ADSS Ottawa",
+      "desc": "Corporate web platform for ADSS Ottawa",
+      "url": "https://adssottawa.com/",
+      "tech": "React, Node.js"
     }
-  ]
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "school": "University of Peshawar, Pakistan",
+    "graduated": "February 2020"
+  }
 }
